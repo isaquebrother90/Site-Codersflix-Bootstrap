@@ -1,0 +1,186 @@
+
+body {
+    background-color: #03295b;
+}
+
+div.container-fluid {
+    padding: 0px 0px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    background-color: rgb(43, 43, 43);
+    font-weight: bolder;
+    box-shadow: yellow;
+}
+
+.navbar-expand-lg {
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    padding: 8px 0px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    border: 20px solid #03295b;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.carousel-caption {
+top: 0px;
+margin-top: 25%;
+}
+
+.slidestitle {
+    font-size: 1.5rem;
+}
+
+.conteudo {
+    font-size: 1,5rem;
+}
+
+footer {
+        border-top: white solid 14px;
+
+}
+
+#lifooter {
+    color: white;
+    list-style: none;
+    width: 30%;
+    display: inline-flex;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+    text-align: left;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.main-title {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 0px;
+    font-size: 1.0rem;
+}
+
+.col-lg-12 {
+
+}
+
+.col-lg-12 .col-md-12 {
+
+}
+
+.col-sm-12 {
+    
+}
+
+.rights {
+    color: white;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+ul {
+    padding-left: 0px;
+    text-align: end;
+}
+
+.btn {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+video.embed-responsive-item {
+    background-color: black;
+}
+
+.faixaCinza {
+    width: 100%;
+    height: 14px;
+    background-color: white;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    border: none;
+}
+
+.faixaCinza1 {
+    width: 100%;
+    height: 14px;
+    background-color: white;
+    margin-top: -24px;
+    padding: 0px 0px;
+    border: none;
+}
+
+.faixaCinza2 {
+    width: 100%;
+    height: 14px;
+    background-color: white;
+    margin-top: -24px;
+    padding: 0px 0px;
+    border: none;
+}
+
+#botaoEmail {
+    margin: auto auto;
+    width: 150px;
+    height: 47px;
+    margin-top: -8px;
+    background-color: black;
+}
+
+#tituloEmail {
+    color: white;
+    margin-top: 70px;
+    text-align: center;
+}
+
+input#exampleInputEmail1 {
+    width: 510px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+.textobotao {
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.row {
+    justify-content: center;
+}
+
+.titfooter {
+    justify-content: center;
+}
+
+.footerfinal {
+    text-align: end;
+    margin: 0 0 16px;
+}
+
+/* 
+.imgBanner{
+    margin:  0 auto;
+}
+
+.banner{
+    margin: 2px 10px;
+    background-color: #fff;
+} */
