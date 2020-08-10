@@ -269,26 +269,5 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
-        <script>
-        $(document).ready(function ($) {
-            const $formulario = $("#formulario");
-            
-            $formulario.submit(e => {
-              e.preventDefault();
-              const $action = $formulario.attr('action');
-              const $data = $formulario.serialize();
-              $.post($action, $data).then(() => {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Enviamos um email de verificação, continue por lá.',
-                    text: 'Muito obrigado!',
-                    footer: '<a href="/">Voltar para home</a>'
-                });
-              });
-            });
-        
-          });
-        </script>
-
 </body>
 </html>
