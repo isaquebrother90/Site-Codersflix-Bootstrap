@@ -25,7 +25,7 @@ function envio(){
 
 }
 
-*/
+
 
 $(document).ready(function ($) {
     const $formulario = $("#formulario");
@@ -44,4 +44,4 @@ $(document).ready(function ($) {
       });
     });
 
-  });
+  });*/
