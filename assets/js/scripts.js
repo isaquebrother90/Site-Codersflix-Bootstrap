@@ -26,3 +26,22 @@ function envio(){
 }
 
 */
+
+$(document).ready(function ($) {
+    const $formulario = $("#formulario");
+    
+    $formulario.submit(e => {
+      e.preventDefault();
+      const $action = $formulario.attr('action');
+      const $data = $formulario.serialize();
+      $.post($action, $data).then(() => {
+        Swal.fire({
+            icon: 'success',
+            title: 'Enviamos um email de verificação, continue por lá.',
+            text: 'Muito obrigado!',
+            footer: '<a href="/">Voltar para home</a>'
+        });
+      });
+    });
+
+  });
