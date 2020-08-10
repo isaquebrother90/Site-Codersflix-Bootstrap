@@ -11,7 +11,7 @@ form.addEventListener("submit", function(event) {
     fetch('')
 
 })*/
-
+/*
 function envio(){
 
     var email = document.getElementById('exampleInputEmail1').nodeValue;
@@ -25,3 +25,4 @@ function envio(){
 
 }
 
+*/
