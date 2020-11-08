@@ -1,3 +1,4 @@
+ HEAD
 nome : ' Envie atualizações para a sua página de perfil '
 descrição : ' Crie uma linha para cada confirmação / liberação na página de perfil. '
 entradas :
@@ -21,3 +22,27 @@ corre :
 marca :
   ícone : ' git-commit '
   cor : ' verde '
+
+name: Update GitHub Profile Page
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  gadpp_job:
+    runs-on: ubuntu-latest
+    name: Update GitHub Profile Page
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: GADPP
+        uses: ./
+        id: gadpp
+        env:
+          API_TOKEN_GITHUB: ${{ API_TOKEN_GITHUB }} 
+          GITHUB_TOKEN: ${{ GITHUB_TOKEN }}
+        with:
+          github-username: 'isaquebrother90'
+          user-email: 'improgramcode@gmail.com'
+ 9782a89b514db7b2ea23cc68e4419081fa05ba71
