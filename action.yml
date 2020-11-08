@@ -1,22 +1,23 @@
-name: Update GitHub Profile Page
-on:
-  schedule:
-    - cron: '*/5 * * * *'
-  workflow_dispatch:
-
-jobs:
-  gadpp_job:
-    runs-on: ubuntu-latest
-    name: Update GitHub Profile Page
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: GADPP
-        uses: ./
-        id: gadpp
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          github-username: 'isaquebrother90'
-          user-email: 'improgramcode@gmail.com'
+nome : ' Envie atualizações para a sua página de perfil '
+descrição : ' Crie uma linha para cada confirmação / liberação na página de perfil. '
+entradas :
+  github-username :
+    descrição : ' Nome do nome de usuário / organização de destino '
+    obrigatório : verdadeiro
+  usuário-e-mail :
+    descrição : ' E-mail para o git commit '
+    obrigatório : verdadeiro
+  arquivo leia-me :
+    descrição : ' O nome do arquivo leia-me '
+    obrigatório : falso
+    padrão : ' README.md '
+corre :
+  usando : ' docker '
+  imagem : ' Dockerfile '
+  args :
+    - $ {{inputs.github-username}}
+    - $ {{inputs.user-email}}
+    - $ {{inputs.readme-file}}
+marca :
+  ícone : ' git-commit '
+  cor : ' verde '
